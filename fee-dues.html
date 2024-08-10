@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fee Dues</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #f5f5f5; /* Light background color for the body */
+      }
+
+      .navbar {
+        margin-bottom: 30px; /* Space between navbar and content */
+      }
+
+      .bill-container {
+        background: #ffffff; /* White background for the bill */
+        border: 1px solid #dee2e6; /* Border color matching Bootstrap default */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for a subtle 3D effect */
+        max-width: 600px; /* Maximum width of the bill container */
+        margin: 0 auto; /* Center the bill container horizontally */
+        padding: 20px; /* Padding inside the container */
+        text-align: center; /* Center text inside the container */
+      }
+
+      .btn-primary {
+        margin-right: 10px; /* Space between buttons */
+      }
+
+      .btn-danger {
+        margin-left: 10px; /* Space between buttons */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html" id="navbar-brand">Home</a>
+    </nav>
+
+    <!-- Fee Dues Container -->
+    <div class="container">
+      <div class="bill-container">
+        <h2 class="mb-4">Fee Due Bill</h2>
+        <p><strong>Date:</strong> August 11, 2024</p>
+        <p><strong>Time:</strong> 10:00 AM</p>
+        <p><strong>Item:</strong> Room Rent</p>
+        <hr />
+        <h3 class="mb-4">Total Due: $500</h3>
+        <a href="#" class="btn btn-primary">Pay</a>
+        <a href="#" class="btn btn-danger">Due</a>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

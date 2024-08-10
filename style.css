@@ -1,0 +1,138 @@
+/* Reset Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #007bff; /* Primary blue background */
+  color: #fff;
+  height: 100vh;
+  background-image: url(https://th.bing.com/th/id/R.85d44f7f33e374a7d0fe5d476412d88a?rik=Ur9tPSfxrH5aLw&pid=ImgRaw&r=0);
+  background-repeat: round;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+#navbar-brand {
+  font-weight: bold;
+  color: #007bff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar-brand:hover {
+  color: #b32400;
+}
+
+/* Container Styling */
+.container {
+  background: #f5f5f518; /* Transparent light grey */
+  color: #000;
+  border-radius: 8px;
+  box-shadow: 17px 14px rgba(97, 78, 165, 0.5), -1em 0 0.4em rgba(0, 0, 0, 0.5),
+    -5px -5px rgba(1, 0, 0, 0.5), 1em 0 0.4em rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Grid Styles */
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+}
+
+/* Card Styles */
+.card {
+  width: 300px;
+  background: rgba(247, 251, 252, 0.722); /* Light grey-blue */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-body {
+  background-color: #ffffff;
+  border-radius: 0 0 15px 15px;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #e9ecef;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer .p-3 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .card {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card {
+    width: 45%; /* Two cards per row on medium screens */
+  }
+
+  .card-img-top {
+    height: 175px;
+  }
+}
